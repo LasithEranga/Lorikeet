@@ -46,13 +46,20 @@ function inspectAndDescribeFiles(folderpath, files, cb){
     }, cb);
 }
 
+function displayFile(file){
+    const mainArea = document.getElementById('main-area');
+    const template = document.querySelector('#item-template');
+    let clone = document.importNode(template.content, true);
+    clone.querySelector('img').src = `images/${file.type}.png`;
+    clone.querySelector('.filename').innerText = file.file;
+    mainArea.appendChild(clone);
+}
+
 function displayFiles(err, files){
     if(err){
         return alert('Sorry we could not find your files');
     }
-    files.forEach((file)=>{
-        console.log(file);
-    });
+    files.forEach(displayFile);
 }
 function main(){
     let folderpath = getUsersHomeFolder();
