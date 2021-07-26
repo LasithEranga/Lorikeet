@@ -1,9 +1,23 @@
 {
-    "name": "lorikeet",
-    "version": "1.0.0",
-    "main": "main.js",
-    "dependencies": {
-        "async": "^3.2.0",
-        "osenv": "^0.1.5"
-    }
+  "name": "lorikeet",
+  "version": "1.0.0",
+  "main": "main.js",
+  "dependencies": {
+    "async": "^3.2.0",
+    "osenv": "^0.1.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LasithEranga/Lorikeet.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LasithEranga/Lorikeet/issues"
+  },
+  "homepage": "https://github.com/LasithEranga/Lorikeet#readme",
+  "description": ""
 }
